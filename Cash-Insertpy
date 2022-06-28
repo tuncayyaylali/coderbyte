@@ -1,0 +1,15 @@
+def DashInsert(strParam):
+  final_list=[]
+  isaret="-"
+  for i in range(len(strParam)-1):
+    carpim = int(strParam[i]) * int(strParam[i+1])
+    if carpim%2==0:
+      final_list.append(strParam[i])
+    else:
+      final_list.append(strParam[i])
+      final_list.append(isaret)
+  final_list.append(strParam[-1])
+  return ''.join(final_list)
+
+# keep this function call here 
+print(DashInsert(input()))
